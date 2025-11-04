@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional portfolio showcasing my skills, projects, and experience as a developer">
+    <meta name="keywords" content="developer, portfolio, web development, projects, skills">
+    <meta name="author" content="Mohamad Azlan">
+
+    <title>MOHD AZLAN PORTFOLIO</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/portfolio-fav-icon.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">My Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I am <span class="highlight">Azlan</span>
+                    </h1>
+                    <p class="hero-subtitle">An aspiring Human Resource</p>
+                    <p class="hero-description">
+                        I am an HR & Talent Specialist with 5+ years of experience designing data-driven, 
+                        human-centric HR solutions across multiple industries. 
+                        Skilled in Talent Acquisition, HR Analytics, and Workforce Development,
+                        I connect people with opportunities and make HR more agile and impactful
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                        <a href="https://drive.google.com/file/d/1uujjElLBEhdCsu7nucPRX468gHG20ll3/view?usp=sharing" class="btn btn-secondary">View Resume</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/azlanwork" class="social-link"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/mohamadazlanwork" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:mohamadazlanwork@outlook.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                         </a>
+                         <!-- 💬 WhatsApp call icon -->
+                         <a href="https://wa.me/60175672234?text=Hi%20Azlan%2C%20I%20would%20like%20to%20schedule%20a%20call%20with%20you!"
+                         class="social-link" aria-label="WhatsApp" target="_blank"
+                         style="color:#25D366; margin-left:10px;">
+                        <i class="fab fa-whatsapp"></i>
+                        </a>
+                       </div>
+                </div>
+                <div class="hero-premium-workspace">
+                    <div class="workspace-3d-container">
+                        <!-- Floating Code Editor -->
+                        <div class="floating-editor">
+                            <div class="editor-window">
+                                <div class="editor-header">
+                                    <div class="window-controls">
+                                        <span class="control close"></span>
+                                        <span class="control minimize"></span>
+                                        <span class="control maximize"></span>
+                                    </div>
+                                    <div class="file-tabs">
+                                        <div class="tab active">portfolio.js</div>
+                                        <div class="tab">style.css</div>
+                                        <div class="tab">index.html</div>
+                                    </div>
+                                </div>
+                                <div class="editor-content">
+                                    <div class="line-numbers">
+                                        <span>1</span>
+                                        <span>2</span>
+                                        <span>3</span>
+                                        <span>4</span>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="code-display">
+                                        <div class="code-line">
+                                            <span class="keyword">const</span> <span class="variable">developer</span>
+                                            <span class="operator">=</span> <span class="string">"Mohamad Azlan"</span><span
+                                                class="punctuation">;</span>
+                                        </div>
+                                        <div class="code-line">
+                                            <span class="variable">developer</span><span
+                                                class="punctuation">.</span><span class="method">build</span><span
+                                                class="punctuation">(</span><span class="string">"amazing
+                                                projects"</span><span class="punctuation">);</span>
+                                        </div>
+                                        <div class="code-line">
+                                            <span class="comment">// Empowering people and enabling growth</span>
+                                        </div>
+                                        <div class="code-line">
+                                            <span class="keyword">return</span> <span
+                                                class="string">"human + data excellence"</span><span class="punctuation">;</span>
+                                        </div>
+                                        <div class="code-line">
+                                            <span class="cursor">|</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Terminal -->
+                        <div class="floating-terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-controls">
+                                    <span class="terminal-dot red"></span>
+                                    <span class="terminal-dot yellow"></span>
+                                    <span class="terminal-dot green"></span>
+                                </div>
+                                <span class="terminal-title">Terminal</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="prompt">$</span> <span class="command">npm run dev</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output">✨ Data-driven insights deployed successfully</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="prompt">$</span> <span class="cursor-terminal">_</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Browser Window -->
+                        <div class="floating-browser">
+                            <div class="browser-header">
+                                <div class="browser-controls">
+                                    <span class="browser-dot red"></span>
+                                    <span class="browser-dot yellow"></span>
+                                    <span class="browser-dot green"></span>
+                                </div>
+                                <div class="address-bar">
+                                    <span class="url">www.humanresource.com</span>
+                                </div>
+                            </div>
+                            <div class="browser-content">
+                                <div class="mini-portfolio">
+                                    <div class="mini-header">Welcome to Azlan Digital HR World</div>
+                                    <div class="mini-sections">
+                                        <div class="mini-section"></div>
+                                        <div class="mini-section active"></div>
+                                        <div class="mini-section"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Tech Stack -->
+                        <div class="floating-tech-stack">
+                            <div class="tech-orbit">
+                                <div class="tech-planet tech-react">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="tech-planet tech-js">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="tech-planet tech-python">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="tech-planet tech-node">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <div class="tech-planet tech-git">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <div class="tech-planet tech-css">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Achievement Cards -->
+                        <div class="floating-achievements">
+                            <div class="achievement-card card-1">
+                                <div class="achievement-icon">📊</div>
+                                <div class="achievement-text">HR Data Analyst</div>
+                            </div>
+                            <div class="achievement-card card-2">
+                                <div class="achievement-icon">🤖</div>
+                                <div class="achievement-text">AI / Automation</div>
+                            </div>
+                            <div class="achievement-card card-2">
+                                <div class="achievement-icon">👥</div>
+                                <div class="achievement-text">People & Teamwork</div>
+                            </div>
+                            <div class="achievement-card card-3">
+                                <div class="achievement-icon">⚙️</div>
+                                <div class="achievement-text">Learning & Development</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Particles -->
+                        <div class="premium-particles">
+                            <div class="particle particle-1"></div>
+                            <div class="particle particle-2"></div>
+                            <div class="particle particle-3"></div>
+                            <div class="particle particle-4"></div>
+                            <div class="particle particle-5"></div>
+                            <div class="particle particle-6"></div>
+                            <div class="particle particle-7"></div>
+                            <div class="particle particle-8"></div>
+                        </div>
+
+                        <!-- Floating Code Snippets -->
+                        <div class="floating-code-snippets">
+                            <div class="code-snippet snippet-1">
+                                <span class="snippet-tag">&lt;/&gt;</span>
+                            </div>
+                            <div class="code-snippet snippet-2">
+                                <span class="snippet-tag">{ }</span>
+                            </div>
+                            <div class="code-snippet snippet-3">
+                                <span class="snippet-tag">( )</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I’m an HR professional with hands-on experience across Talent Acquisition, 
+                        HR Operations, Employee Engagement, and Learning & Development. 
+                        I’m passionate about building efficient HR processes, supporting people growth, 
+                        and using data and technology to improve overall HR effectiveness. 
+
+                    </p>
+                    <p class="about-description">
+                        Currently, I’m focused on HR analytics, recruitment automation, and digital talent strategies that bridge education and employment. 
+                I love exploring modern HR tools, from ATS and HRIS systems to Power BI dashboards, to make hiring more efficient and transparent.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-label">Focus Areas</span>
+                            <span class="highlight-value">Talent Acquisition, HRBP, HR Operations, HR Analytics</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-label">Current Goal</span>
+                            <span class="highlight-value">Build data-driven, people-centric HR solutions</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-label">Approach</span>
+                            <span class="highlight-value">Empathy, learning, and data-based decisions</span>
+                        </div>
+                    </div>
+                    <div class="about-action">
+                        <button class="details-btn" onclick="openDetailsModal()">
+                            <i class="fas fa-user-circle"></i>
+                            My Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="https://i.postimg.cc/WpYbsp0t/1720369130015.jpg" alt="Mohamad Azlan - Aspiring Human Resources"
+                            class="about-img">
+                        <div class="photo-overlay">
+                            <button class="details-btn" onclick="openDetailsModal()">
+                                <i class="fas fa-user-circle"></i>
+                                My Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Modal -->
+    <div id="detailsModal" class="details-modal">
+        <div class="modal-overlay" onclick="closeDetailsModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Personal Details</h2>
+                <button class="modal-close" onclick="closeDetailsModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="details-grid">
+                    <!-- Basic Information -->
+                    <div class="detail-section">
+                        <h3><i class="fas fa-info-circle"></i> Basic Information</h3>
+                        <div class="detail-item">
+                            <span class="detail-label">Full Name:</span>
+                            <span class="detail-value">Mohamad Azlan</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">Malaysia, Kuala Lumpur</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">mohamadazlanwork@outlook.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Phone:</span>
+                            <span class="detail-value">+60175672234</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Resume:</span>
+                            <span class="detail-value">
+                                <a href="https://drive.google.com/file/d/1uujjElLBEhdCsu7nucPRX468gHG20ll3/view?usp=sharing"
+                                    target="_blank" class="resume-link">
+                                    <i class="fas fa-file-pdf"></i> RESUME
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="detail-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="detail-item">
+                            <span class="detail-label">Degree:</span>
+                            <span class="detail-value">Bachelor's Degree in Human Resources</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">University:</span>
+                            <span class="detail-value">University of Selangor, Malaysia</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Year:</span>
+                            <span class="detail-value">2018 - 2021</span>
+                        </div>
+
+                        <div class="detail-item"
+                            style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(59, 130, 246, 0.1);">
+                            <span class="detail-label">Diploma:</span>
+                            <span class="detail-value">Diploma in Business Management</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">University:</span>
+                            <span class="detail-value"> Kuala Lumpur Metropolitan University</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Year:</span>
+                            <span class="detail-value">2015 - 2017</span>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="detail-section">
+                        <h3><i class="fas fa-language"></i> Languages</h3>
+                        <div class="language-items">
+                            <div class="language-item">
+                                <span class="language-name">English</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 98%"></div>
+                                </div>
+                                <span class="proficiency-level">Fluent</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Malay</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="proficiency-level">Native</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Tamil</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="proficiency-level">Fluent</span>
+                                 </div>
+                            <div class="language-item">
+                                <span class="language-name">Urdu</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 50%"></div>
+                                </div>
+                                <span class="proficiency-level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="detail-section">
+                        <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                        <div class="cert-items">
+                            <div class="cert-item">
+                                <div class="cert-icon">🤖</div>
+                                <div class="cert-info">
+                                    <span class="cert-name">Generative A.I</span>
+                                    <span class="cert-issuer">Professional Certification</span>
+                                    <span class="cert-date">2025</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">⚡</div>
+                                <div class="cert-info">
+                                    <span class="cert-name">Agile Project Management</span>
+                                    <span class="cert-issuer">Professional Certification</span>
+                                    <span class="cert-date">2025</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">💼</div>
+                                <div class="cert-info">
+                                    <span class="cert-name">Microsoft Office Suite</span>
+                                    <span class="cert-issuer">Microsoft</span>
+                                    <span class="cert-date">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interests & Hobbies -->
+                    <div class="detail-section">
+                        <h3><i class="fas fa-heart"></i> Interests & Hobbies</h3>
+                        <div class="hobby-tags">
+                            <span class="hobby-tag">👥 HR Strategy, Coaching & Mentoring</span>
+                            <span class="hobby-tag">📊 HR Analytics, Data Visualization & Dashboard Design</span>
+                            <span class="hobby-tag">💻 Exploring HR Tech & Automation Tools</span>
+                            <span class="hobby-tag">🎥 Video Editing & Creative Storytelling</span>
+                            <span class="hobby-tag">🧠 Continuous Learning (YouTube & Online Courses)</span>
+                            <span class="hobby-tag">🎨 Digital Design & Visualization</span>
+                            <span class="hobby-tag">🎧 Business, Leadership & Career Podcasts</span>
+                            <span class="hobby-tag">🤝 Volunteering & Community Projects</span>
+
+                        </div>
+                    </div>
+
+                    <!-- Fun Facts -->
+                    <div class="detail-section">
+                        <h3><i class="fas fa-lightbulb"></i> Fun Facts</h3>
+                        <div class="fun-facts-list">
+                            <div class="fun-fact">
+                                <span class="fact-emoji">🌙</span>
+                                <span class="fact-text">My best HR dashboard ideas usually come after midnight</span>
+                            </div>
+                            <div class="fun-fact">
+                                <span class="fact-emoji">☕</span>
+                                <span class="fact-text">Coffee and Power BI keep my creativity flowing</span>
+                            </div>
+                            <div class="fun-fact">
+                                <span class="fact-emoji">⚡</span>
+                                <span class="fact-text">I genuinely enjoy turning complex data into simple workforce insights</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- 🌟 Skills Section -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <p class="section-subtitle">Tools and competencies that support strategic HR and data-driven talent management</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- 🧩 HR Systems & ATS -->
+      <div class="skill-category">
+        <h3 class="category-title">HR Systems & ATS</h3>
+        <div class="skills-list">
+          <div class="skill-item"><i class="fas fa-user-tie"></i><span>Zoho Recruit</span></div>
+          <div class="skill-item"><i class="fas fa-chart-pie"></i><span>Zoho Analytics</span></div>
+          <div class="skill-item"><i class="fas fa-briefcase"></i><span>Workday HCM</span></div>
+          <div class="skill-item"><i class="fas fa-database"></i><span>Oracle PeopleSoft</span></div>
+          <div class="skill-item"><i class="fas fa-id-card-alt"></i><span>Info-Tech HRMS</span></div>
+          <div class="skill-item"><i class="fas fa-hubspot"></i><span>HubSpot</span></div>
+          <div class="skill-item"><i class="fas fa-user-cog"></i><span>HR2000</span></div>
+        </div>
+      </div>
+
+      <!-- 📊 Analytics & Tools -->
+      <div class="skill-category">
+        <h3 class="category-title">Analytics & Tools</h3>
+        <div class="skills-list">
+          <div class="skill-item"><i class="fas fa-chart-line"></i><span>Power BI</span></div>
+          <div class="skill-item"><i class="fas fa-table"></i><span>Excel</span></div>
+          <div class="skill-item"><i class="fas fa-share-alt"></i><span>SharePoint</span></div>
+          <div class="skill-item"><i class="fas fa-robot"></i><span>Power Automate</span></div>
+          <div class="skill-item"><i class="fas fa-comments"></i><span>Chatbot Automation</span></div>
+          <div class="skill-item"><i class="fas fa-chart-area"></i><span>Dashboard Visualization</span></div>
+          <div class="skill-item"><i class="fas fa-layer-group"></i><span>Power Apps</span></div>
+        </div>
+      </div>
+
+      <!-- 💼 Recruitment Platforms -->
+      <div class="skill-category">
+        <h3 class="category-title">Recruitment Platforms</h3>
+        <div class="skills-list">
+          <div class="skill-item"><i class="fas fa-globe"></i><span>MYCareerFuture SG</span></div>
+          <div class="skill-item"><i class="fas fa-rocket"></i><span>Apollo</span></div>
+          <div class="skill-item"><i class="fab fa-linkedin"></i><span>LinkedIn Recruiter</span></div>
+          <div class="skill-item"><i class="fas fa-briefcase"></i><span>JobStreet</span></div>
+          <div class="skill-item"><i class="fas fa-certificate"></i><span>MAICSA</span></div>
+          <div class="skill-item"><i class="fas fa-bolt"></i><span>FastJobs</span></div>
+          <div class="skill-item"><i class="fas fa-oil-can"></i><span>Oil & Gas Job Search</span></div>
+        </div>
+      </div>
+<!-- 💻 Web & Technical Skills -->
+<div class="skill-category">
+  <h3 class="category-title">Web & Technical Skills</h3>
+  <div class="skills-list">
+    <div class="skill-item"><i class="fab fa-html5"></i><span>HTML (Basic)</span></div>
+    <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS (Basic)</span></div>
+    <div class="skill-item"><i class="fab fa-github"></i><span>GitHub & Version Control</span></div>
+    <div class="skill-item"><i class="fas fa-file-alt"></i><span>README Documentation</span></div>
+    <div class="skill-item"><i class="fas fa-terminal"></i><span>Command Line Basics</span></div>
+    <div class="skill-item"><i class="fas fa-code"></i><span>Visual Studio Code</span></div>
+    <div class="skill-item"><i class="fas fa-cloud"></i><span>Web Deployment (Basic)</span></div>
+  </div>
+</div>
+  </div>
+</section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+                <p style="font-size: 13px; color: #ff4d4d; font-style: italic;">
+                Note: Dashboards use demo data only. No confidential information included.
+            </div>
+
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Lithan Academy">Lithan Academy</button>
+                <button class="filter-btn" data-filter="CIMB">CIMB</button>
+                <button class="filter-btn" data-filter="HR Analytics">Bumi Armada</button>
+                <button class="filter-btn" data-filter="frontend">Acclime</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">My professional journey</p>
+    </div>
+
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jan 2024 - Present</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Talent Specialist</h3>
+          <h4 class="timeline-company">Lithan Academy, Singapore (Remote)</h4>
+          <p>Supporting 500+ learners in job matching and career coaching across IT and digital programs. Collaborating with employers to align talent readiness with workforce needs. Utilising HR analytics and Power BI dashboards to track placement performance and improve learner outcomes.</p>
+          <ul class="timeline-skills">
+            <li>Talent Analytics</li>
+            <li>Employer Engagement</li>
+            <li>Career Coaching</li>
+            <li>Power BI Dashboarding</li>
+            <li>SkillsFuture Compliance (SCTP)</li>
+            <li>ATS Automation</li>
+            <li>Chatbot Integration</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-line"></div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May 2023 – Dec 2023</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">HR Operations</h3>
+          <h4 class="timeline-company">Acclime Malaysia, Kuala Lumpur</h4>
+          <p>Managed HR operations and payroll processes for clients across multiple sectors. Ensured compliance with Malaysian employment regulations and statutory reporting (EPF, SOCSO, EIS). Assisted with onboarding, HRDF submissions, and HR documentation for internal and external teams.</p>
+          <ul class="timeline-skills">
+            <li>Payroll & Compliance</li>
+            <li>HRDF Management</li>
+            <li>Performance Management</li>
+            <li>Statutory Reporting</li>
+            <li>HR2000 & Info-Tech System</li>
+            <li>Employee Onboarding</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-line"></div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Apr 2022 – May 2023</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Human Resource Business Partner</h3>
+          <h4 class="timeline-company">CIMB Group, Kuala Lumpur</h4>
+          <p>Partnered with business units to support performance management, manpower planning, and employee engagement initiatives. Provided HR analytics and insights to guide workforce decisions. Supported the rollout of new HR digital tools to streamline processes across departments.</p>
+          <ul class="timeline-skills">
+            <li>HR Business Partnering</li>
+            <li>Employee Engagement</li>
+            <li>Manpower Planning</li>
+            <li>Talent Retention</li>
+            <li>L&D Coordination</li>
+            <li>ISO 9001:2015</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="timeline-line"></div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Apr 2021 – Mar 2022</div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">HRBP Intern</h3>
+          <h4 class="timeline-company">Bumi Armada Berhad, Kuala Lumpur</h4>
+          <p>Supported HR Business Partnering team in recruitment coordination, onboarding, and HRIS (SAP SuccessFactors) updates. Assisted in preparing HR reports, employee training schedules, and engagement activities for onshore and offshore teams.</p>
+          <ul class="timeline-skills">
+            <li>Recruitment Support</li>
+            <li>HRIS (SAP SF / Taleo)</li>
+            <li>Employee Engagement Surveys</li>
+            <li>Mobility Tracking</li>
+            <li>Onboarding & Offboarding</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Section Separator -->
+    <div class="section-separator">
+        <div class="container">
+            <div class="separator-line"></div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2021</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Bachelor's Degree in Human Resources</h3>
+                        <h4 class="timeline-company">University of Selangor</h4>
+                        <p class="timeline-description">
+                            Built a strong academic foundation in strategic HR management, organisational behaviour,
+                            and data-driven people analytics. Completed an industrial internship focusing on
+                            onboarding, HRIS implementation, and performance optimisation to enhance workforce productivity.
+
+                        </p>
+                        <ul class="timeline-skills">
+                            <li>Talent Management</li>
+                            <li>HR Analytics</li>
+                            <li>Employment Law</li>
+                            <li>Performance Management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2017</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Diploma in Business Management</h3>
+                        <h4 class="timeline-company">Kuala Lumpur Metropolitan University College</h4>
+                        <p class="timeline-description">
+                            Gained essential knowledge in management, business communication,
+                             and leadership practices that built the foundation for a career in Human Resources.
+                        </p>
+                        <ul class="timeline-skills">
+                            <li>Business Communication</li>
+                            <li>Leadership</li>
+                            <li>Organisational Behaviour</li>
+                            <li>People Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let’s collaborate and create impact together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">Let's Connect</h3>
+                    <p class="contact-description">
+                        I am always open to meaningful connections and professional opportunities. 
+                        Whether you’d like to discuss workforce transformation, data-driven HR, 
+                        or simply exchange ideas about people and strategy — feel free to reach out
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>mohamadazlanwork@outlook.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+60175672234</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Malaysia, Kuala Lumpur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Mohamad Azlan.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/azlanwork" class="social-link"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mohamadazlanwork" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mohamadazlanwork@outlook.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/scroll-animations.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
