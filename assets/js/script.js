@@ -128,134 +128,137 @@ function initScrollEffects() {
 // Project Filters
 // ===============================
 function initProjectFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectsGrid = document.getElementById('projects-grid');
+  const projectsGrid = document.getElementById('projects-grid');
 
-    // Sample project data
-    const projects = [
-        {
-             title: "Learner Analytics Dashboard",
-    description: "Visualizing learner performance, placements, and program engagement through data-driven insights.",
-    image: "https://github.com/mohamadazlanwork/MohamadAzlanPortfolio/blob/main/img/Hr%20Employee%20Overview.jpg?raw=true",
-    technologies: ["Power BI", "DAX", "Data Modeling"],
-    categories: ["Lithan Academy"],
-    liveUrl: "https://mohamadazlanwork.github.io/HR_Dashboards/,
-    githubUrl: "https://github.com/mohamadazlanwork/Powerbi_Dashboard"
-        },
-        {
-            title: "CIMB HR Experience Journey",
-    description:
-      "Highlights my achievements at CIMB in employer branding, HR analytics, and recruitment operations.",
-    image:
-      "https://github.com/mohamadazlanwork/Logoall/blob/main/CIMB%201.jpg?raw=true",
-    technologies: [
-      "Employer Branding",
-      "Power BI",
-      "HR Analytics",
-      "Recruitment Operations",
-      "Employee Engagement",
-    ],
-    categories: ["CIMB"],
-    liveUrl: "https://mohamadazlanwork.github.io/Cimb/",
-    githubUrl: "https://github.com/mohamadazlanwork/Cimb"
-        },
-        {
-            title: "Bumi Armada Workforce Flow Tracker",
-  description:"Designed an HR lifecycle interface to track onboarding, training readiness, and exit timelines",
-  image:"https://github.com/mohamadazlanwork/Logoall/blob/main/Bumi%20Picture%20Backgorun.jpg?raw=true",
-  technologies: [
-    "Google Sheets API",
-    "JavaScript",
-    "Chart.js",
-    "Glassmorphism UI",
-    "Live Data Visualization"
-  ],
-  categories: ["HR Analytics"],
-  liveUrl: "https://mohamadazlanwork.github.io/BumiArmada/",
-  githubUrl: "https://github.com/mohamadazlanwork/BumiArmada"
-        },
-        {
-            title: "Acclime Hiring Operations Monitor",
-            description: "An interactive recruitment dashboard tracking interview stages using demo data.",
-            image: "https://github.com/mohamadazlanwork/Logoall/blob/main/acclime-recruitment-tracker.vercel.app.png?raw=true",
-            technologies: ["Google Sheets API", "Talent Acquisition", "Data Visualization"],
-            categories: ["frontend", "dashboard"],
-            liveUrl: "https://acclime-recruitment-tracker.vercel.app/",
-            githubUrl: "https://github.com/mohamadazlanwork/Acclime_Recruitment_Tracker"
-        },
-        {
-            title: "Review-Recommendation",
-            description: "Showcasing authentic Google and LinkedIn testimonials from learners and peers",
-            image: "https://github.com/mohamadazlanwork/Logoall/blob/main/Screenshot%202025-11-04%20201321.jpg?raw=true", // replace if you have a different cover
-            technologies: ["Google Reviews", "LinkedIn Recommendations","Portfolio Integration"],
-            categories: ["Testimonials", "Professional Reviews"],
-            liveUrl: "https://mohamadazlanwork.github.io/Review-Recommendation/",
-            githubUrl: "https://github.com/mohamadazlanwork/Review-Recommendation"
-       } 
-    ];
+  // ===== Project Data =====
+  const projects = [
+    {
+      title: "Learner Analytics Dashboard",
+      description:
+        "Visualizing learner performance, placements, and program engagement through data-driven insights.",
+      image:
+        "https://github.com/mohamadazlanwork/MohamadAzlanPortfolio/blob/main/img/Hr%20Employee%20Overview.jpg?raw=true",
+      technologies: ["Power BI", "DAX", "Data Modeling"],
+      categories: ["HR Dashboard"],
+      liveUrl: "https://mohamadazlanwork.github.io/HR_Dashboards/",
+      githubUrl: "https://github.com/mohamadazlanwork/Powerbi_Dashboard",
+    },
+    {
+      title: "CIMB HR Experience Journey",
+      description:
+        "Highlights my achievements at CIMB in employer branding, HR analytics, and recruitment operations.",
+      image:
+        "https://github.com/mohamadazlanwork/Logoall/blob/main/CIMB%201.jpg?raw=true",
+      technologies: [
+        "Employer Branding",
+        "Power BI",
+        "HR Analytics",
+        "Recruitment Operations",
+        "Employee Engagement",
+      ],
+      categories: ["CIMB"],
+      liveUrl: "https://mohamadazlanwork.github.io/Cimb/",
+      githubUrl: "https://github.com/mohamadazlanwork/Cimb",
+    },
+    {
+      title: "Bumi Armada Workforce Flow Tracker",
+      description:
+        "Designed an HR lifecycle interface to track onboarding, training readiness, and exit timelines.",
+      image:
+        "https://github.com/mohamadazlanwork/Logoall/blob/main/Bumi%20Picture%20Backgorun.jpg?raw=true",
+      technologies: [
+        "Google Sheets API",
+        "JavaScript",
+        "Chart.js",
+        "Glassmorphism UI",
+        "Live Data Visualization",
+      ],
+      categories: ["HR Analytics"],
+      liveUrl: "https://mohamadazlanwork.github.io/BumiArmada/",
+      githubUrl: "https://github.com/mohamadazlanwork/BumiArmada",
+    },
+    {
+      title: "Acclime Hiring Operations Monitor",
+      description:
+        "An interactive recruitment dashboard tracking interview stages using demo data.",
+      image:
+        "https://github.com/mohamadazlanwork/Logoall/blob/main/acclime-recruitment-tracker.vercel.app.png?raw=true",
+      technologies: [
+        "Google Sheets API",
+        "Talent Acquisition",
+        "Data Visualization",
+      ],
+      categories: ["frontend", "dashboard"],
+      liveUrl: "https://acclime-recruitment-tracker.vercel.app/",
+      githubUrl:
+        "https://github.com/mohamadazlanwork/Acclime_Recruitment_Tracker",
+    },
+    {
+      title: "Review-Recommendation",
+      description:
+        "Showcasing authentic Google and LinkedIn testimonials from learners and peers.",
+      image:
+        "https://github.com/mohamadazlanwork/Logoall/blob/main/Screenshot%202025-11-04%20201321.jpg?raw=true",
+      technologies: [
+        "Google Reviews",
+        "LinkedIn Recommendations",
+        "Portfolio Integration",
+      ],
+      categories: ["Testimonials", "Professional Reviews"],
+      liveUrl:
+        "https://mohamadazlanwork.github.io/Review-Recommendation/",
+      githubUrl:
+        "https://github.com/mohamadazlanwork/Review-Recommendation",
+    },
+  ];
 
-    // Render initial projects
-    renderProjects(projects);
+  // ===== Function to Render Projects =====
+  renderProjects(projects);
 
-    // Add filter event listeners
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
+  function renderProjects(projectsToRender) {
+    projectsGrid.innerHTML = "";
 
-            // Filter projects
-            const filter = this.getAttribute('data-filter');
-            const filteredProjects = filter === 'all' 
-                ? projects 
-                : projects.filter(project => project.categories.includes(filter));
+    projectsToRender.forEach((project, index) => {
+      const projectCard = createProjectCard(project);
+      projectsGrid.appendChild(projectCard);
 
-            renderProjects(filteredProjects);
-        });
+      setTimeout(() => {
+        projectCard.classList.add("animate-in");
+      }, index * 100);
     });
+  }
 
-    function renderProjects(projectsToRender) {
-        projectsGrid.innerHTML = '';
-        
-        projectsToRender.forEach((project, index) => {
-            const projectCard = createProjectCard(project);
-            projectsGrid.appendChild(projectCard);
-            
-            // Add staggered animation
-            setTimeout(() => {
-                projectCard.classList.add('animate-in');
-            }, index * 100);
-        });
-    }
+  function createProjectCard(project) {
+    const card = document.createElement("div");
+    card.className = "project-card animate-element";
 
-    function createProjectCard(project) {
-        const card = document.createElement('div');
-        card.className = 'project-card animate-element';
-        card.setAttribute('data-category', project.categories.join(' '));
-        
-        card.innerHTML = `
-            <div class="project-image">
-                <img src="${project.image}" alt="${project.title}" loading="lazy" 
-                     onerror="this.src='https://via.placeholder.com/400x200?text=Project+Image'">
-                <div class="project-overlay">
-                    ${project.liveUrl !== '#' ? `<a href="${project.liveUrl}" class="project-link" target="_blank" aria-label="View live project">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>` : ''}
-                    <a href="${project.githubUrl}" class="project-link" target="_blank" aria-label="View source code">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="project-content">
-                <h3 class="project-title">${project.title}</h3>
-                <p class="project-description">${project.description}</p>
-                <div class="project-tech">
-                    ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                </div>
-            </div>
-        `;
-        
-        return card;
-    }
+    card.innerHTML = `
+      <div class="project-image">
+        <img src="${project.image}" alt="${project.title}" loading="lazy"
+          onerror="this.src='https://via.placeholder.com/400x200?text=Project+Image'">
+        <div class="project-overlay">
+          ${
+            project.liveUrl
+              ? `<a href="${project.liveUrl}" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>`
+              : ""
+          }
+          <a href="${project.githubUrl}" class="project-link" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">${project.title}</h3>
+        <p class="project-description">${project.description}</p>
+        <div class="project-tech">
+          ${project.technologies
+            .map((tech) => `<span class="tech-tag">${tech}</span>`)
+            .join("")}
+        </div>
+      </div>
+    `;
+    return card;
+  }
 }
 
 // ===============================
