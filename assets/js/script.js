@@ -138,7 +138,7 @@ function initProjectFilters() {
     description: "Visualizing learner performance, placements, and program engagement through data-driven insights.",
     image: "https://github.com/mohamadazlanwork/MohamadAzlanPortfolio/blob/main/img/Hr%20Employee%20Overview.jpg?raw=true",
     technologies: ["Power BI", "DAX", "Data Modeling"],
-    categories: ["HR Dashboard"],
+    categories: ["Lithan Academy"],
     liveUrl: "https://mohamadazlanwork.github.io/HR_Dashboards/,
     githubUrl: "https://github.com/mohamadazlanwork/Powerbi_Dashboard"
         },
