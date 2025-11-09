@@ -134,9 +134,9 @@ function initProjectFilters() {
     // Sample project data
     const projects = [
         {
-             title: "Lithan Academy Learner Analytics Dashboard",
+             title: "Learner Analytics Dashboard",
     description: "Visualizing learner performance, placements, and program engagement through data-driven insights.",
-    image: "https://github.com/mohamadazlanwork/Logoall/blob/main/Lithan%20Academy.jpg?raw=true",
+    image: "https://github.com/mohamadazlanwork/MohamadAzlanPortfolio/blob/main/img/Hr%20Employee%20Overview.jpg?raw=true",
     technologies: ["Power BI", "DAX", "Data Modeling"],
     categories: ["Lithan Academy"],
     liveUrl: "https://mohamadazlanwork.github.io/Lithan_Academy/",
