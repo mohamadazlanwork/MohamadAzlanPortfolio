@@ -135,7 +135,7 @@ function initProjectFilters() {
     {
       title: "HR Analytics & IT Recruitment Dashboards",
       description:
-        "Visualizing learner performance, placements, and program engagement through data-driven insights.",
+        "Visualizing end-to-end IT hiring performance, candidate placements, and recruiter effectiveness through data-driven dashboards. Showcases insights across cloud, infrastructure, support, and data roles — connecting technical hiring trends with learner outcomes.",
       image:
         "https://github.com/mohamadazlanwork/HR_Dashboards/blob/main/11.11.2025/1.%20Placement%20Overview%20Dashboard.jpg?raw=true",
       technologies: ["Power BI", "DAX", "Data Modeling"],
