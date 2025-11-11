@@ -133,11 +133,11 @@ function initProjectFilters() {
   // ===== Project Data =====
   const projects = [
     {
-      title: "Learner Analytics Dashboard",
+      title: "HR Analytics & IT Recruitment Dashboards",
       description:
         "Visualizing learner performance, placements, and program engagement through data-driven insights.",
       image:
-        "https://github.com/mohamadazlanwork/MohamadAzlanPortfolio/blob/main/img/Hr%20Employee%20Overview.jpg?raw=true",
+        "https://github.com/mohamadazlanwork/HR_Dashboards/blob/main/11.11.2025/1.%20Placement%20Overview%20Dashboard.jpg?raw=true",
       technologies: ["Power BI", "DAX", "Data Modeling"],
       categories: ["HR Dashboard"],
       liveUrl: "https://mohamadazlanwork.github.io/HR_Dashboards/",
